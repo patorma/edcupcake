@@ -1,8 +1,13 @@
-import Header from './sections/Header';
-import '../styles/styles.scss'
+import Header from "./sections/Header";
+import Home from "./pages/home";
+import "../styles/styles.scss";
+
 
 const App = () => (
- <Header />
-) 
+  <>
+    <Header />
+    <Home />
+  </>
+);
 
 export default App;
