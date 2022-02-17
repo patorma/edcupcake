@@ -1,14 +1,14 @@
 import Header from "./sections/Header";
-import Home from "./pages/home";
-import Cupcakes from "./pages/cupcakes";
+import { BrowserRouter as Router } from "react-router-dom";
 import "../styles/styles.scss";
+import Pages from "./pages/Pages";
+
 
 const App = () => (
-  <>
+  <Router>
     <Header />
-    {window.location.pathname === "/" && <Home />}
-    {window.location.pathname === "/cupcakes" && <Cupcakes />}
-  </>
+      <Pages />
+  </Router>
 );
 
 export default App;

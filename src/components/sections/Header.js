@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom"
+
 const Header = () => (
   <header className="main-header">
     <div className="ed-grid s-grid-5 lg-grid-4">
@@ -14,13 +16,13 @@ const Header = () => (
         <nav className="main-menu" id="main-menu">
           <ul>
             <li>
-              <a href="/">Inicio</a>
+              <NavLink to="/">Inicio</NavLink>
             </li>
             <li>
-              <a href="/cupcakes">Cupcakes</a>
+              <NavLink to="/cupcakes">Cupcakes</NavLink>
             </li>
             <li>
-              <a href="/nosotros">Nosotros</a>
+              <NavLink to="/nosotros">Nosotros</NavLink>
             </li>
           </ul>
         </nav>
