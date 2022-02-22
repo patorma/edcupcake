@@ -6,7 +6,7 @@ import Home from "./home";
 const Pages = () => (
   <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="cupcakes" element={<Cupcakes />} />
+    <Route path="cupcakes" element={<Cupcakes title peticion="cupcakes"/>} />
     <Route path="nosotros" element={<AboutUs />} />
   </Routes>
 );

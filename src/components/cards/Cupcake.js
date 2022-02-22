@@ -1,19 +1,18 @@
-const Cupcake = ({ 
-    descripcion,
-    image,
-    sabor,
-    color,
-    precio 
-}) => {
+// import "./cupcakes.css";
+const Cupcake = ({ descripcion, imagen, sabor, color, precio }) => {
   //se retorna la estructura de nuestro cupcake
   return (
-    <div>
-      <img src={image} alt={sabor} />
+  
+    <div className="s-radius-1 s-shadow-bottom background s-shadow-card-micro white-color s-pxy-2">
+      <img src={imagen} alt={sabor} className="imagen" />
+
       <p>{descripcion}</p>
-      <span>Color: {color}</span>
-      <span>Precio: {precio}</span>
-    </div>
+
+      <span className="s-pxy-2">Color: {color}</span>
+      <span className="s-pxy-2">Precio: {precio}</span>
+      </div>
+    
   );
 };
 
-export default  Cupcake;
+export default Cupcake;

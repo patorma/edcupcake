@@ -1,0 +1,15 @@
+.centrar {
+    display: inline-block;
+    margin: 10px 15px ;
+  
+}
+
+.centrar .imagen{
+    height: 200px;
+    width: 200px;
+    margin: 10px 5px 20px 590px;
+}
+
+.div1 .span .span2{
+ display: block;
+}
