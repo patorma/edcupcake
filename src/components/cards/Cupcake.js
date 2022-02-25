@@ -1,4 +1,5 @@
-// import "./cupcakes.css";
+import PropTypes from 'prop-types'
+
 const Cupcake = ({ descripcion, imagen, sabor, color, precio }) => {
   //se retorna la estructura de nuestro cupcake
   return (
@@ -15,4 +16,11 @@ const Cupcake = ({ descripcion, imagen, sabor, color, precio }) => {
   );
 };
 
+Cupcake.propTypes = {
+  precio: PropTypes.number,
+  color: PropTypes.string,
+  descripcion: PropTypes.string,
+  sabor: PropTypes.string,
+  imagen: PropTypes.string
+}
 export default Cupcake;
